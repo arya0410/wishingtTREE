@@ -18,8 +18,8 @@ export default function Home() {
                     {/* Background Image */}
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg"
-                            alt="Luxury Indian Wedding"
+                            src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg"
+                            alt="Luxury Wedding"
                             fill
                             className="object-cover brightness-50"
                             priority
@@ -35,18 +35,18 @@ export default function Home() {
                             You Wish, We Accomplish
                         </p>
                         <p className="font-sans text-lg md:text-xl mb-12 opacity-90">
-                            Luxury Indian Weddings, Crafted Globally
+                            Luxury Weddings, Crafted Globally
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
-                                href="/services"
-                                className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-3 rounded-full transition-colors duration-300"
+                                href="#services"
+                                className="btn-primary"
                             >
                                 Explore Our Services
                             </Link>
                             <Link
-                                href="/contact"
-                                className="border-2 border-white hover:bg-white hover:text-gold-900 text-white px-8 py-3 rounded-full transition-colors duration-300"
+                                href="#contact"
+                                className="btn-outline"
                             >
                                 Book a Consultation
                             </Link>
@@ -54,13 +54,19 @@ export default function Home() {
                     </div>
                 </section>
 
-                <AboutSection />
+                <div id="about">
+                    <AboutSection />
+                </div>
                 <FounderSection />
-                <ServicesSection />
+                <div id="services">
+                    <ServicesSection />
+                </div>
                 <TestimonialsSection />
-                <ContactSection />
+                <div id="contact">
+                    <ContactSection />
+                </div>
                 <Footer />
             </main>
         </>
     )
-} 
+}
